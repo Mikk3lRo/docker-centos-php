@@ -40,3 +40,5 @@ RUN curl -fsSL https://getcomposer.org/installer | php \
 RUN php -m | grep xdebug
 
 ENV PATH /root/.composer/vendor/bin:$PATH
+
+RUN git config --global push.default simple
